@@ -1,0 +1,19 @@
+{
+  "name": "h3-server",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=8080",
+    "dev-server": "listhen -w client/main.server.ts",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.6.2"
+  },
+  "dependencies": {
+    "vite": "^6.0.3",
+    "listhen": "^1.9.0"
+  }
+}
