@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=8080",
-    "dev-server": "listhen -w client/main.server.ts",
+    "dev-server": "listhen -w server/main.server.ts",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -13,7 +13,8 @@
     "typescript": "~5.6.2"
   },
   "dependencies": {
-    "vite": "^6.0.3",
-    "listhen": "^1.9.0"
+    "crossws": "^0.3.1",
+    "listhen": "^1.9.0",
+    "vite": "^6.0.3"
   }
 }
