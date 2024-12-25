@@ -1,5 +1,5 @@
-import { defineHooks} from 'crossws'
-
+import { defineWebSocketHandler } from "h3"
+import { defineHooks } from "crossws"
 
 export const websocket = {
   hooks: defineHooks({
@@ -14,7 +14,7 @@ export const websocket = {
       } else {
         const msg = {
           user: peer.toString(),
-          message: message.toString(),
+          message: message.toString()
         };
         peer.send(msg); // echo
         peer.publish("chat", msg);
@@ -22,6 +22,8 @@ export const websocket = {
     },
     close(peer) {
       peer.publish("chat", { user: "server", message: `${peer} left!` });
-    },
-  }),
+    }
+  })
 };
+
+export default defineWebSocketHandler(websocket.hooks);

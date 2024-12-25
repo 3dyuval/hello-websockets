@@ -1,17 +1,20 @@
-# hello websockets
-
+# h3-websocket-monorepo
 
 **Prerequisites**
 
 - node
 - pnpm
 
-how to run 
+**How to Run**
 
-```node
-pnpm run dev // runs the client
-```
-
-```node
-pnpm run dev-server // runs the server
-```
+# Runs both client and server
+`pnpm dev`
+Copy
+# Run the client only
+`pnpm dev:client`
+Copy
+# Run the server only
+`pnpm dev:server`
+Copy
+# Alternatively, you can run both client and server
+`pnpm dev:both`
