@@ -1,4 +1,4 @@
-# h3-websocket-monorepo
+# websocket with nitro + vite -monorepo template
 
 **Prerequisites**
 
